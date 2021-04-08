@@ -14,7 +14,7 @@ const handle = app.getRequestHandler()
 // create your own certificate with openssl for development
 const options = {
   key: fs.readFileSync(path.join(__dirname, '/privateKey.key')),
-  cert: fs.readFileSync(path.join(__dirname, '/certificate.crt'))
+  cert: fs.readFileSync(path.join(__dirname, '/certificate.cert'))
 }
 
 const shouldCompress = (req, res) => {
